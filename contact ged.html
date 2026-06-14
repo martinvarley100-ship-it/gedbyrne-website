@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Prof. Ged Byrne MBE</title>
+  <meta name="description" content="Contact Prof. Ged Byrne MBE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">&larr; Prof. Ged Byrne MBE</a>
+    <h1 class="page-title">Contact</h1>
+    <form name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hp"><label>Leave this empty: <input name="bot-field" /></label></p>
+
+      <label class="field">
+        <span>Name</span>
+        <input type="text" name="name" required />
+      </label>
+
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" required />
+      </label>
+
+      <label class="field">
+        <span>Reason for contact</span>
+        <select name="reason" required>
+          <option value="" disabled selected>Please choose</option>
+          <option>Global health partnership</option>
+          <option>Speaking or panel</option>
+          <option>Medical education or academic</option>
+          <option>Advisory or board</option>
+          <option>Media enquiry</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="submit">Send</button>
+    </form>
+  </main>
+</body>
+</html>
